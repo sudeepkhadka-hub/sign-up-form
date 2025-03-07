@@ -85,7 +85,7 @@
 }
 .mid  .form-container {
     display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1.5fr;
         /* Two columns */
         gap: 10px 20px;
         /* Row and column gaps */
