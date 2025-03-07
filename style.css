@@ -1,18 +1,131 @@
-.wrapper {
-    height: 100vh;
-    width: 80%;
-    margin-top: 0%;
-    margin: auto;
-    background-color: black;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Sora;
 }
 
-.hero-section {
+/* @font-face {
+    font-family: 'CustomBold';
+    src: url('/Norse-Bold.otf') format('truetype');
+    /* Adjust path if needed */
+    /* font-weight: bold;
+    font-style: normal; */
+ */
+
+.bold-text {
+    font-family: 'CustomBold', sans-serif;
+    /* Fallback to sans-serif */
+    font-weight: bold;
+}
+.navbar-color{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    margin: 0%;
+
+}
+
+.wrapper{
+    background-color: white;
+    height: 100vh;
+    width: 70%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.main{
     display: flex;
     flex-direction: row;
+    height: inherit;
+    
 }
 
-#img{
+.main .left{
+    width: 40%;
+    height: 100%;
     overflow: hidden;
-    height: auto;
-    width: auto;
 }
+
+.left .imgg{
+    width: 100%;
+    height: 100vh;
+    display: block;
+    object-fit: cover;
+    /* max-width: ; */
+}
+.main .right {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100vh;
+    width: 100vh;
+}
+
+
+
+.right .top{
+    /* margin: 10px; */
+    padding: 30px;
+    text-align:justify;
+    align-content: center;
+    background-color: rgb(249, 250, 251);
+}
+
+.top .bold-text{
+    /* color: black; */
+    font-size: large;
+    font-size: 20px;
+}
+
+
+.mid{
+    display: grid;
+    gap: 20px;
+    padding: 30px;
+}
+.mid  .form-container {
+    display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* Two columns */
+        gap: 10px 20px;
+        /* Row and column gaps */
+        width: inherit;
+        
+ }
+
+ label {
+     text-align: right; 
+      padding-right: 5px;
+ }
+
+ input
+ {
+    width: 80%;
+        padding: 6px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        overflow: hidden;
+ }
+
+ /* .bold{
+    font-weight: bold;
+    font-size: large;
+ } */
+
+ .low{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    display: flex;
+    background-color: rgb(249, 250, 251);
+    gap: 20px;
+
+ }
+
+ .btn{
+    color: white;
+    width: 150px;
+    border-radius: 6px;
+    height: 50px;
+    background-color: rgb(89, 109, 72);
+ }
